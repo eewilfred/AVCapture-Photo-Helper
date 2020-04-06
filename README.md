@@ -1,6 +1,6 @@
 # AV-Capture-Photo-Helper
 
-Protocol-based easy setup for enabling live video from camera on your view
+Protocol-based easy setup for enabling live preview and capture from camera
 
 ## Usage:
 
