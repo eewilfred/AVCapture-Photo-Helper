@@ -33,6 +33,18 @@ class ViewController: UIViewController, LivePhotoCapture {
         prepareForPhotoCapture(onView: cameraPreviewView)
     }
 
+    override func viewWillDisappear(_ animated: Bool) {
+
+        super.viewWillDisappear(animated)
+        stopSession()
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
+
+        super.viewWillAppear(animated)
+        startSession()
+    }
+
     @IBAction func capturePhoto(_ sender: UIButton) {
 
         capturePhoto()
